@@ -1,12 +1,11 @@
 #pragma once
 #include "Enemy.h"
-
 class VampireBat : public Enemy
 {
 public:
-    VampireBat(std::string name, int maxHp, int maxToughness);
-    ActionResult performAttack() override;
-
+	VampireBat(std::string name, int maxhp, int maxtoughness);
+	ActionResult performAttack() override;
 private:
-    int m_turnCount{ 0 };
+	int m_turnCount{ 0 };
+
 };

@@ -105,7 +105,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\CAT COLLEGE LEGAZPI\source\repos\test\TurnBasedRPG\TurnBasedRPG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Marilao, Johngie\newnewturnbased\TurnBasedRPG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,6 +131,7 @@
     <ClCompile Include="..\TurnBasedRPG\Character.cpp" />
     <ClCompile Include="..\TurnBasedRPG\Enemy.cpp" />
     <ClCompile Include="..\TurnBasedRPG\Player.cpp" />
+    <ClCompile Include="..\TurnBasedRPG\Slime.cpp" />
     <ClCompile Include="test_character.cpp" />
     <ClCompile Include="test_enemy.cpp" />
     <ClCompile Include="test_player.cpp" />

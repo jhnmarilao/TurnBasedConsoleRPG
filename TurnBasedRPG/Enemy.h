@@ -4,8 +4,7 @@
 #include <optional>
 #include "Drop.h"
 
-// Represents a single enemy unit.
-// Inherits HP from Character and adds a Toughness break gauge.
+
 class Enemy : public Character
 {
 public:
@@ -16,16 +15,8 @@ public:
     bool hasDrop() const;
     const std::optional<Drop>& getDrop() const;
     std::optional<Drop> dropLoot();
-
-    // Reduces the break gauge by amount.
-    // Sets isBroken() and resets the gauge when it reaches zero.
     void reduceToughness(int amount);
-
-    // Called at the end of the enemy's stunned turn to clear the broken flag.
     void recoverFromBreak();
-
-    // Returns the HP damage dealt to the player this turn.     
-    // // Derived classes override this to implement specific attack patterns.
     virtual ActionResult performAttack();
 
 
