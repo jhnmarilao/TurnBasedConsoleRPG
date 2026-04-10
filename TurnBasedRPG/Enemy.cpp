@@ -17,8 +17,8 @@ const std::optional<Drop>& Enemy::getDrop() const { return m_drop; }
 
 std::optional<Drop> Enemy::dropLoot()
 {
-    std::optional<Drop> result{ m_drop };   // copy whatever is there
-    m_drop = std::nullopt;                  // always clear it
+    std::optional<Drop> result{ m_drop };   
+    m_drop = std::nullopt;                  
     return result;
 }
 
@@ -28,7 +28,7 @@ void Enemy::reduceToughness(int amount)
     if (m_toughness == 0)
     {
         m_isBroken = true;
-        m_toughness = m_maxToughness; // reset for the next cycle
+        m_toughness = m_maxToughness; 
     }
 }
 

@@ -1,8 +1,6 @@
 #pragma once
 #include <string>
 
-// Base class shared by the Player and Enemy.
-// Owns the character's name, HP, and the logic that changes HP.
 class Character
 {
 public:
